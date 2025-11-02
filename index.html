@@ -63,15 +63,21 @@
       <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
         <a href="#" class="flex items-center gap-3">
           <img src="/images/logo.png" alt="Chef Hantu logo" class="h-9 w-9 rounded-full object-cover ring-2 ring-slate-700" onerror="this.style.display='none'" />
-          <span class="text-lg font-semibold tracking-wide">Chef Hantu</span>
+          <span id="siteTitle" class="text-lg font-semibold tracking-wide">Chef Hantu</span>
         </a>
         <nav class="hidden md:flex items-center gap-6 text-sm">
-          <a href="#menu" class="hover:text-emerald-300">Menu</a>
-          <a href="#gallery" class="hover:text-emerald-300">Gallery</a>
-          <a href="#location" class="hover:text-emerald-300">Location</a>
-          <a href="#contact" class="hover:text-emerald-300">Contact</a>
+          <a id="navMenu" href="#menu" class="hover:text-emerald-300">Menu</a>
+          <a id="navGallery" href="#gallery" class="hover:text-emerald-300">Gallery</a>
+          <a id="navLocation" href="#location" class="hover:text-emerald-300">Location</a>
+          <a id="navContact" href="#contact" class="hover:text-emerald-300">Contact</a>
         </nav>
-        <a href="#contact" class="ml-4 inline-flex items-center rounded-xl bg-emerald-400 px-4 py-2 text-slate-900 font-semibold hover:bg-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-500">Reserve</a>
+        <!-- Language Toggle -->
+        <div class="hidden md:flex items-center gap-2 text-sm">
+          <button id="langEN" class="px-2 py-1 rounded hover:bg-slate-800" aria-pressed="true">EN</button>
+          <span class="opacity-50">|</span>
+          <button id="langMS" class="px-2 py-1 rounded hover:bg-slate-800" aria-pressed="false">BM</button>
+        </div>
+        <a id="btnReserve" href="#contact" class="ml-4 inline-flex items-center rounded-xl bg-emerald-400 px-4 py-2 text-slate-900 font-semibold hover:bg-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-500">Reserve</a>
       </div>
     </header>
 
@@ -83,15 +89,11 @@
       </div>
       <div class="relative mx-auto max-w-6xl px-4 py-24 md:py-32">
         <div class="max-w-3xl">
-          <h1 class="text-4xl md:text-6xl font-black leading-tight">
-            Malaysian‑Western <span class="text-emerald-400">Fusion</span> Dining
-          </h1>
-          <p class="mt-4 text-slate-300 md:text-lg">
-            Cozy, family‑friendly & culturally welcoming. Fresh ingredients, halal‑friendly menu, and bold flavors.
-          </p>
+          <h1 id="heroTitle" class="text-4xl md:text-6xl font-black leading-tight">Malaysian‑Western <span class="text-emerald-400">Fusion</span> Dining</h1>
+          <p id="heroSub" class="mt-4 text-slate-300 md:text-lg">Cozy, family‑friendly & culturally welcoming. Fresh ingredients, halal‑friendly menu, and bold flavors.</p>
           <div class="mt-8 flex flex-wrap gap-3">
-            <a href="#menu" class="rounded-xl bg-slate-800 px-5 py-3 hover:bg-slate-700">View Menu</a>
-            <a href="#location" class="rounded-xl bg-emerald-400 px-5 py-3 font-semibold text-slate-900 hover:bg-emerald-300">Find Us</a>
+            <a id="btnViewMenu" href="#menu" class="rounded-xl bg-slate-800 px-5 py-3 hover:bg-slate-700">View Menu</a>
+            <a id="btnFindUs" href="#location" class="rounded-xl bg-emerald-400 px-5 py-3 font-semibold text-slate-900 hover:bg-emerald-300">Find Us</a>
           </div>
         </div>
       </div>
@@ -124,8 +126,8 @@
       <div class="mx-auto max-w-6xl px-4 py-16">
         <div class="flex items-end justify-between gap-4">
           <div>
-            <h2 class="text-3xl md:text-4xl font-extrabold">Menu Highlights</h2>
-            <p class="mt-2 text-slate-300">Full menu available in‑store. Prices subject to change.</p>
+            <h2 id="menuTitle" class="text-3xl md:text-4xl font-extrabold">Menu Highlights</h2>
+            <p id="menuSubtitle" class="mt-2 text-slate-300">Full menu available in‑store. Prices subject to change.</p>
           </div>
           <a href="#contact" class="hidden sm:inline-flex rounded-xl border border-emerald-500/40 px-4 py-2 hover:bg-emerald-500/10">Ask for Catering</a>
         </div>
@@ -192,8 +194,8 @@
     <!-- Gallery -->
     <section class="section" id="gallery">
       <div class="mx-auto max-w-6xl px-4 py-16">
-        <h2 class="text-3xl md:text-4xl font-extrabold">Gallery</h2>
-        <p class="mt-2 text-slate-300">Swap these images with your own photos to make the page yours.</p>
+        <h2 id="galleryTitle" class="text-3xl md:text-4xl font-extrabold">Gallery</h2>
+        <p id="gallerySubtitle" class="mt-2 text-slate-300">Swap these images with your own photos to make the page yours.</p>
         <div class="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
           <img class="h-48 w-full rounded-xl object-cover" src="/images/gallery/1.jpg" alt="Restaurant interior seating" onerror="this.style.display='none'" />
           <img class="h-48 w-full rounded-xl object-cover" src="/images/gallery/2.jpg" alt="Kitchen and counter" onerror="this.style.display='none'" />
@@ -206,7 +208,7 @@
     <section class="section" id="location">
       <div class="mx-auto max-w-6xl px-4 py-16 grid gap-8 md:grid-cols-2">
         <div>
-          <h2 class="text-3xl md:text-4xl font-extrabold">Find Us</h2>
+          <h2 id="findUsTitle" class="text-3xl md:text-4xl font-extrabold">Find Us</h2>
           <p class="mt-2 text-slate-300">55 Jalan Sentral 2, Taman Nusa Sentral, 79100 Gelang Patah, Johor</p>
 
           <div class="mt-4 space-y-2 text-sm text-slate-300">
@@ -237,28 +239,28 @@
     <!-- Contact -->
     <section class="section" id="contact">
       <div class="mx-auto max-w-3xl px-4 py-16">
-        <h2 class="text-3xl md:text-4xl font-extrabold">Contact & Reservations</h2>
-        <p class="mt-2 text-slate-300">Send us a WhatsApp or email. For quick replies, WhatsApp is best.</p>
+        <h2 id="contactTitle" class="text-3xl md:text-4xl font-extrabold">Contact & Reservations</h2>
+        <p id="contactSubtitle" class="mt-2 text-slate-300">Send us a WhatsApp or email. For quick replies, WhatsApp is best.</p>
 
         <form class="mt-8 grid gap-4 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-soft" onsubmit="event.preventDefault(); alert('Thanks! We\'ll get back to you soon.');">
           <div class="grid gap-4 md:grid-cols-2">
             <div>
-              <label class="text-sm text-slate-300" for="name">Name</label>
+              <label id="labelName" class="text-sm text-slate-300" for="name">Name</label>
               <input id="name" type="text" required class="mt-1 w-full rounded-xl border border-slate-700 bg-slate-800 px-3 py-2 outline-none focus:ring-2 focus:ring-emerald-500" />
             </div>
             <div>
-              <label class="text-sm text-slate-300" for="phone">Phone / WhatsApp</label>
+              <label id="labelPhone" class="text-sm text-slate-300" for="phone">Phone / WhatsApp</label>
               <input id="phone" type="tel" class="mt-1 w-full rounded-xl border border-slate-700 bg-slate-800 px-3 py-2 outline-none focus:ring-2 focus:ring-emerald-500" />
             </div>
           </div>
           <div>
-            <label class="text-sm text-slate-300" for="msg">Message</label>
+            <label id="labelMessage" class="text-sm text-slate-300" for="msg">Message</label>
             <textarea id="msg" rows="4" class="mt-1 w-full rounded-xl border border-slate-700 bg-slate-800 px-3 py-2 outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Booking for 6 pax on Friday 8pm..."></textarea>
           </div>
           <div class="flex flex-wrap gap-3">
-            <button class="rounded-xl bg-emerald-400 px-5 py-2 font-semibold text-slate-900 hover:bg-emerald-300" type="submit">Send</button>
-            <a class="rounded-xl border border-slate-700 px-5 py-2 hover:bg-slate-800" href="https://wa.me/601159589600" target="_blank" rel="noopener">WhatsApp MY</a>
-            <a class="rounded-xl border border-slate-700 px-5 py-2 hover:bg-slate-800" href="https://wa.me/6594563526" target="_blank" rel="noopener">WhatsApp SG</a>
+            <button id="btnSend" class="rounded-xl bg-emerald-400 px-5 py-2 font-semibold text-slate-900 hover:bg-emerald-300" type="submit">Send</button>
+            <a id="btnWaMY" class="rounded-xl border border-slate-700 px-5 py-2 hover:bg-slate-800" href="https://wa.me/601159589600" target="_blank" rel="noopener">WhatsApp MY</a>
+            <a id="btnWaSG" class="rounded-xl border border-slate-700 px-5 py-2 hover:bg-slate-800" href="https://wa.me/6594563526" target="_blank" rel="noopener">WhatsApp SG</a>
           </div>
         </form>
       </div>
@@ -285,5 +287,65 @@
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+      <script>
+      // Language toggle (EN/BM)
+      const t = {
+        en: {
+          siteTitle: 'Chef Hantu',
+          navMenu: 'Menu', navGallery: 'Gallery', navLocation: 'Location', navContact: 'Contact',
+          btnReserve: 'Reserve',
+          heroTitle: 'Malaysian‑Western <span class="text-emerald-400">Fusion</span> Dining',
+          heroSub: 'Cozy, family‑friendly & culturally welcoming. Fresh ingredients, halal‑friendly menu, and bold flavors.',
+          btnViewMenu: 'View Menu', btnFindUs: 'Find Us',
+          menuTitle: 'Menu Highlights', menuSubtitle: 'Full menu available in‑store. Prices subject to change.',
+          galleryTitle: 'Gallery', gallerySubtitle: 'Swap these images with your own photos to make the page yours.',
+          findUsTitle: 'Find Us',
+          contactTitle: 'Contact & Reservations', contactSubtitle: 'Send us a WhatsApp or email. For quick replies, WhatsApp is best.',
+          labelName: 'Name', labelPhone: 'Phone / WhatsApp', labelMessage: 'Message',
+          btnSend: 'Send', btnWaMY: 'WhatsApp MY', btnWaSG: 'WhatsApp SG'
+        },
+        ms: {
+          siteTitle: 'Chef Hantu',
+          navMenu: 'Menu', navGallery: 'Galeri', navLocation: 'Lokasi', navContact: 'Hubungi',
+          btnReserve: 'Tempah',
+          heroTitle: 'Hidangan <span class="text-emerald-400">Fusi</span> Malaysia‑Barat',
+          heroSub: 'Suasana mesra keluarga & sesuai untuk semua. Bahan segar, menu mesra halal dan rasa yang berani.',
+          btnViewMenu: 'Lihat Menu', btnFindUs: 'Cari Kami',
+          menuTitle: 'Sorotan Menu', menuSubtitle: 'Menu penuh tersedia di kedai. Harga tertakluk kepada perubahan.',
+          galleryTitle: 'Galeri', gallerySubtitle: 'Gantikan imej ini dengan foto anda sendiri.',
+          findUsTitle: 'Cari Kami',
+          contactTitle: 'Hubungi & Tempahan', contactSubtitle: 'Hantar WhatsApp atau e‑mel. Untuk respons pantas, WhatsApp adalah terbaik.',
+          labelName: 'Nama', labelPhone: 'Telefon / WhatsApp', labelMessage: 'Mesej',
+          btnSend: 'Hantar', btnWaMY: 'WhatsApp MY', btnWaSG: 'WhatsApp SG'
+        }
+      };
+
+      const ids = ['siteTitle','navMenu','navGallery','navLocation','navContact','btnReserve','heroTitle','heroSub','btnViewMenu','btnFindUs','menuTitle','menuSubtitle','galleryTitle','gallerySubtitle','findUsTitle','contactTitle','contactSubtitle','labelName','labelPhone','labelMessage','btnSend','btnWaMY','btnWaSG'];
+
+      function applyLang(lang){
+        const dict = t[lang];
+        ids.forEach(id=>{
+          const el = document.getElementById(id);
+          if(!el || !dict[id]) return;
+          // heroTitle includes HTML span, others are plain text
+          if(id === 'heroTitle') el.innerHTML = dict[id];
+          else el.textContent = dict[id];
+        });
+        // Set html lang attribute
+        document.documentElement.setAttribute('lang', lang === 'ms' ? 'ms' : 'en');
+        // Toggle button aria state
+        document.getElementById('langEN').setAttribute('aria-pressed', lang==='en');
+        document.getElementById('langMS').setAttribute('aria-pressed', lang==='ms');
+        localStorage.setItem('chefHantuLang', lang);
+      }
+
+      // Hook up buttons
+      document.getElementById('langEN').addEventListener('click', ()=>applyLang('en'));
+      document.getElementById('langMS').addEventListener('click', ()=>applyLang('ms'));
+
+      // Init language from storage or default EN
+      applyLang(localStorage.getItem('chefHantuLang') || 'en');
+    </script>
   </body>
+</html>
 </html>

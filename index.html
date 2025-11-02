@@ -39,15 +39,28 @@
 
     <!-- Global styles (fonts, background, overlay) -->
     <style>
-      body {
-        font-family: 'Lora', serif;
-        color: #EAEAEA;
-        background-image: url('/images/bg.jpg');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;   /* parallax effect */
-        background-color: #0b1220;      /* fallback */
-      }
+  body {
+    font-family: 'Lora', serif;
+    color: #EAEAEA;
+    background-image: url('/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;   /* parallax effect */
+    background-color: #0b1220;      /* fallback */
+  }
+</style>
+
+<style>
+  /* Social icon hover glow */
+  .social-icon svg {
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 0 rgba(0,0,0,0));
+  }
+  .social-icon:hover svg {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 6px currentColor);
+  }
+</style>
       /* Subtle dark overlay for readability */
       body::before {
         content: "";

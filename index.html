@@ -61,20 +61,22 @@
     filter: drop-shadow(0 0 6px currentColor);
   }
 </style>
-      /* Subtle dark overlay for readability */
-      body::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        background: rgba(0,0,0,0.5);
-        z-index: -1;
-      }
-      h1, h2 {
-        font-family: 'Playfair Display', serif;
-        color: #FFFFFF;
-        text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-      }
-    </style>
+
+<style>
+  /* Subtle dark overlay for readability */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+  }
+  h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  }
+</style>
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">

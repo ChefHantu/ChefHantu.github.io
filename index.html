@@ -117,12 +117,21 @@
   <!-- HERO: main landing section -->
   <section class="relative overflow-hidden">
     <div class="absolute inset-0">
-      <img src="/images/hero.jpg"
-           alt="Chef Hantu Malaysian-Western fusion dining"
-           class="h-full w-full object-cover opacity-40"
-           onerror="this.remove()" />
-      <div class="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/70 to-slate-950"></div>
-    </div>
+  <picture class="h-full w-full">
+    <!-- Mobile -->
+    <source media="(max-width: 640px)" srcset="/images/hero-mobile.jpg">
+
+    <!-- Desktop -->
+    <img src="/images/hero.jpg"
+         alt="Chef Hantu Malaysian-Western fusion dining"
+         class="h-full w-full object-cover opacity-40"
+         onerror="this.remove()" />
+  </picture>
+
+  <!-- Gradient stays the same -->
+  <div class="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/70 to-slate-950"></div>
+</div>
+
 
     <div class="relative mx-auto max-w-6xl px-4 py-24 md:py-32">
       <!-- ADD mx-auto text-center HERE -->

@@ -1,0 +1,82 @@
+<script src="https://cdn.tailwindcss.com"></script>
+<script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Chef Hantu",
+        "servesCuisine": ["Malaysian", "Western", "Fusion"],
+        "image": "https://chefhantu.com/images/hero.jpg",
+        "url": "https://chefhantu.com",
+        "email": ["angah@chefhantu.com", "hafiz@chefhantu.com"],
+        "telephone": ["+60-11-5958-9600", "+65-9456-3526"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "55 Jalan Sentral 2, Taman Nusa Sentral",
+          "addressLocality": "Gelang Patah",
+          "addressRegion": "Johor",
+          "postalCode": "79100",
+          "addressCountry": "MY"
+        },
+        "openingHours": ["Mo-Su 15:00-23:00"],
+        "priceRange": "$$",
+        "sameAs": [
+  "https://www.facebook.com/profile.php?id=61582625955194",
+  "https://www.instagram.com/chefhantu/",
+  "https://www.tiktok.com/@chef_hantu"
+        ]
+      }
+    </script>
+<script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+<script>
+      const t = {
+        en: {
+          siteTitle: 'Chef Hantu',
+          navMenu: 'Menu', navGallery: 'Gallery', navLocation: 'Location', navContact: 'Contact',
+          btnReserve: 'Reserve',
+          heroTitle: 'Malaysian-Western <span class="text-emerald-400">Fusion</span> Dining',
+          heroSub: 'Cozy, family-friendly & culturally welcoming. Fresh ingredients, halal-friendly menu, and bold flavors.',
+          btnViewMenu: 'View Menu', btnFindUs: 'Find Us',
+          menuTitle: 'Menu Highlights', menuSubtitle: 'Full menu available in-store. Prices subject to change.',
+          galleryTitle: 'Gallery', gallerySubtitle: 'Swap these images with your own photos to make the page yours.',
+          findUsTitle: 'Find Us',
+          contactTitle: 'Contact & Reservations', contactSubtitle: 'Send us a WhatsApp or email. For quick replies, WhatsApp is best.',
+          labelName: 'Name', labelPhone: 'Phone / WhatsApp', labelMessage: 'Message',
+          btnSend: 'Send', btnWaMY: 'WhatsApp MY', btnWaSG: 'WhatsApp SG'
+        },
+        ms: {
+          siteTitle: 'Chef Hantu',
+          navMenu: 'Menu', navGallery: 'Galeri', navLocation: 'Lokasi', navContact: 'Hubungi',
+          btnReserve: 'Tempah',
+          heroTitle: 'Hidangan <span class="text-emerald-400">Fusi</span> Malaysia-Barat',
+          heroSub: 'Suasana mesra keluarga & sesuai untuk semua. Bahan segar, menu mesra halal dan rasa yang berani.',
+          btnViewMenu: 'Lihat Menu', btnFindUs: 'Cari Kami',
+          menuTitle: 'Sorotan Menu', menuSubtitle: 'Menu penuh tersedia di kedai. Harga tertakluk kepada perubahan.',
+          galleryTitle: 'Galeri', gallerySubtitle: 'Gantikan imej ini dengan foto anda sendiri.',
+          findUsTitle: 'Cari Kami',
+          contactTitle: 'Hubungi & Tempahan', contactSubtitle: 'Hantar WhatsApp atau e-mel. Untuk respons pantas, WhatsApp adalah terbaik.',
+          labelName: 'Nama', labelPhone: 'Telefon / WhatsApp', labelMessage: 'Mesej',
+          btnSend: 'Hantar', btnWaMY: 'WhatsApp MY', btnWaSG: 'WhatsApp SG'
+        }
+      };
+
+      const ids = ['siteTitle','navMenu','navGallery','navLocation','navContact','btnReserve','heroTitle','heroSub','btnViewMenu','btnFindUs','menuTitle','menuSubtitle','galleryTitle','gallerySubtitle','findUsTitle','contactTitle','contactSubtitle','labelName','labelPhone','labelMessage','btnSend','btnWaMY','btnWaSG'];
+
+      function applyLang(lang){
+        const dict = t[lang];
+        ids.forEach(id=>{
+          const el = document.getElementById(id);
+          if(!el || !dict[id]) return;
+          if(id === 'heroTitle') el.innerHTML = dict[id]; else el.textContent = dict[id];
+        });
+        document.documentElement.setAttribute('lang', lang === 'ms' ? 'ms' : 'en');
+        document.getElementById('langEN').setAttribute('aria-pressed', lang==='en');
+        document.getElementById('langMS').setAttribute('aria-pressed', lang==='ms');
+        localStorage.setItem('chefHantuLang', lang);
+      }
+
+      document.getElementById('langEN').addEventListener('click', ()=>applyLang('en'));
+      document.getElementById('langMS').addEventListener('click', ()=>applyLang('ms'));
+      applyLang(localStorage.getItem('chefHantuLang') || 'en');
+    </script>

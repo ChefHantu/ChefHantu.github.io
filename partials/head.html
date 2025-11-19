@@ -1,0 +1,107 @@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chef Hantu | Malaysian-Western Fusion in Gelang Patah</title>
+    <meta name="description" content="Cozy Malaysian-Western fusion dining in Gelang Patah. Open daily 3–11pm. View menu, contact us, and find our location." />
+    <link rel="canonical" href="https://chefhantu.com/" />
+
+    <!-- Social Sharing / Open Graph -->
+    <meta property="og:title" content="Chef Hantu" />
+    <meta property="og:description" content="Malaysian-Western fusion dining. See our menu, location, and hours." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://chefhantu.com/" />
+    <meta property="og:image" content="https://chefhantu.com/images/og-chef-hantu.jpg" />
+    <meta name="theme-color" content="#0b1220" />
+
+    <!-- Icons -->
+    <link rel="icon" href="/images/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Preload background image for faster paint -->
+    <link rel="preload" as="image" href="/images/bg.jpg">
+
+    <!-- Helpers -->
+    <style>
+      .glass { backdrop-filter: blur(6px); background: rgba(15, 23, 42, 0.6); }
+      .section { scroll-margin-top: 100px; }
+      .shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+    </style>
+
+    <!-- Global styles (fonts, background, overlay) -->
+    <style>
+  body {
+    font-family: 'Lora', serif;
+    color: #EAEAEA;
+    background-image: url('/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;   /* parallax effect */
+    background-color: #0b1220;      /* fallback */
+  }
+</style>
+
+<style>
+  /* Social icon hover glow */
+  .social-icon svg {
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 0 rgba(0,0,0,0));
+  }
+  .social-icon:hover svg {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 6px currentColor);
+  }
+</style>
+
+<style>
+  /* Subtle dark overlay for readability */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+  }
+  h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  }
+</style>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Chef Hantu",
+        "servesCuisine": ["Malaysian", "Western", "Fusion"],
+        "image": "https://chefhantu.com/images/hero.jpg",
+        "url": "https://chefhantu.com",
+        "email": ["angah@chefhantu.com", "hafiz@chefhantu.com"],
+        "telephone": ["+60-11-5958-9600", "+65-9456-3526"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "55 Jalan Sentral 2, Taman Nusa Sentral",
+          "addressLocality": "Gelang Patah",
+          "addressRegion": "Johor",
+          "postalCode": "79100",
+          "addressCountry": "MY"
+        },
+        "openingHours": ["Mo-Su 15:00-23:00"],
+        "priceRange": "$$",
+        "sameAs": [
+  "https://www.facebook.com/profile.php?id=61582625955194",
+  "https://www.instagram.com/chefhantu/",
+  "https://www.tiktok.com/@chef_hantu"
+        ]
+      }
+    </script>
+  </head>

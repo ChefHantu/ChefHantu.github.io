@@ -39,14 +39,21 @@
 
     <!-- Global styles (fonts, background, overlay) -->
     <style>
+  /* Base body styles (used on all devices) */
   body {
     font-family: 'Lora', serif;
     color: #EAEAEA;
-    background-image: url('/images/bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;   /* parallax effect */
-    background-color: #0b1220;      /* fallback */
+    background-color: #0b1220;  /* solid dark background for mobile */
+  }
+
+  /* Only use the big parallax background on larger screens */
+  @media (min-width: 768px) {
+    body {
+      background-image: url('/images/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;   /* parallax effect on desktop */
+    }
   }
 </style>
 

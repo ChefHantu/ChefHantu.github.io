@@ -112,6 +112,7 @@
   <!-- Header -->
   <div data-include="partials/header.html"></div>
 
+  <!-- Main sections -->
   <main>
     <div data-include="partials/hero.html"></div>
     <div data-include="partials/highlights.html"></div>
@@ -119,14 +120,13 @@
     <div data-include="partials/gallery.html"></div>
     <div data-include="partials/location.html"></div>
     <div data-include="partials/contact.html"></div>
-
   </main>
 
   <!-- Footer -->
   <div data-include="partials/footer.html"></div>
 
-  <!-- Shared scripts (year, language toggle, etc.) -->
-<script src="https://cdn.tailwindcss.com"></script>
+  <!-- Original page scripts -->
+  <script src="https://cdn.tailwindcss.com"></script>
 <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -209,7 +209,7 @@
       applyLang(localStorage.getItem('chefHantuLang') || 'en');
     </script>
 
-  <!-- Loader for partials -->
+  <!-- Simple client-side loader for partials -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       document.querySelectorAll('[data-include]').forEach(function(el) {

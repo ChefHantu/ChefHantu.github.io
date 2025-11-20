@@ -125,28 +125,16 @@
   <div data-include="partials/header.html"></div>
 
   <!-- Main sections -->
-  <main>
+ <main>
   <!-- HERO: main landing section -->
   <section class="relative overflow-hidden">
+    
+    <!-- Gradient overlay only (background comes from body: bg.jpg) -->
     <div class="absolute inset-0">
-  <picture class="h-full w-full">
-    <!-- Mobile -->
-    <source media="(max-width: 640px)" srcset="/images/hero-mobile.jpg">
-
-    <!-- Desktop -->
-    <img src="/images/hero.jpg"
-         alt="Chef Hantu Malaysian-Western fusion dining"
-         class="h-full w-full object-cover opacity-40"
-         onerror="this.remove()" />
-  </picture>
-
-  <!-- Gradient stays the same -->
-  <div class="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/70 to-slate-950"></div>
-</div>
-
+      <div class="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/70 to-slate-950"></div>
+    </div>
 
     <div class="relative mx-auto max-w-6xl px-4 py-24 md:py-32">
-      <!-- ADD mx-auto text-center HERE -->
       <div class="max-w-3xl mx-auto text-center">
 
         <h1 id="heroTitle" class="text-4xl md:text-6xl font-black leading-tight">
@@ -158,7 +146,6 @@
           looking for hearty comfort food just across the Causeway.
         </p>
 
-        <!-- ADD justify-center HERE -->
         <div class="mt-8 flex flex-wrap gap-3 justify-center">
           <a href="menu.html"
              class="rounded-xl bg-emerald-400 px-5 py-3 font-semibold text-slate-900 hover:bg-emerald-300">
@@ -176,7 +163,9 @@
 
       </div>
     </div>
-</section>
+
+  </section>
+</main>
 
   <!-- QUICK CTA CARDS: send people to the right pages quickly -->
   <section class="section">

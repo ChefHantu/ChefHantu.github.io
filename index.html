@@ -20,8 +20,7 @@
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
     <!-- Tailwind via CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -45,19 +44,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: #0b1220;
-  }
-</style>
-
-    <!-- Global styles (fonts, background, overlay) -->
-    <style>
-  body {
-    font-family: 'Lora', serif;
-    color: #EAEAEA;
-    background-image: url('/images/bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;   /* parallax effect */
-    background-color: #0b1220;      /* fallback */
   }
 </style>
 
@@ -120,7 +106,6 @@
   </head>
 
 <body class="text-slate-100 antialiased">
-    <div class=\"fixed-mobile-bg\"></div>
   <!-- Header -->
   <div data-include="partials/header.html"></div>
 
@@ -353,98 +338,93 @@
   <div data-include="partials/footer.html"></div>
 
   <!-- Original page scripts -->
-  <script src="https://cdn.tailwindcss.com"></script>
-<script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Restaurant",
-        "name": "Chef Hantu",
-        "servesCuisine": ["Malaysian", "Western", "Fusion"],
-        "image": "https://chefhantu.com/images/hero.jpg",
-        "url": "https://chefhantu.com",
-        "email": ["angah@chefhantu.com", "hafiz@chefhantu.com"],
-        "telephone": ["+60-11-5958-9600", "+65-9456-3526"],
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "55 Jalan Sentral 2, Taman Nusa Sentral",
-          "addressLocality": "Gelang Patah",
-          "addressRegion": "Johor",
-          "postalCode": "79100",
-          "addressCountry": "MY"
-        },
-        "openingHours": ["Mo-Su 15:00-23:00"],
-        "priceRange": "$$",
-        "sameAs": [
-  "https://www.facebook.com/profile.php?id=61582625955194",
-  "https://www.instagram.com/chefhantu/",
-  "https://www.tiktok.com/@chef_hantu"
-        ]
-      }
-    </script>
+  
 <script>
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 <script>
-      const t = {
-        en: {
-          siteTitle: 'Chef Hantu',
-          navMenu: 'Menu', navGallery: 'Gallery', navLocation: 'Location', navContact: 'Contact',
-          btnReserve: 'Reserve',
-          heroTitle: 'Malaysian-Western <span class="text-emerald-400">Fusion</span> Dining',
-          heroSub: 'Cozy, family-friendly & culturally welcoming. Fresh ingredients, halal-friendly menu, and bold flavors.',
-          btnViewMenu: 'View Menu', btnFindUs: 'Find Us',
-          menuTitle: 'Menu Highlights', menuSubtitle: 'Full menu available in-store. Prices subject to change.',
-          galleryTitle: 'Gallery', gallerySubtitle: 'Swap these images with your own photos to make the page yours.',
-          findUsTitle: 'Find Us',
-          contactTitle: 'Contact & Reservations', contactSubtitle: 'Send us a WhatsApp or email. For quick replies, WhatsApp is best.',
-          labelName: 'Name', labelPhone: 'Phone / WhatsApp', labelMessage: 'Message',
-          btnSend: 'Send', btnWaMY: 'WhatsApp MY', btnWaSG: 'WhatsApp SG'
-        },
-        ms: {
-          siteTitle: 'Chef Hantu',
-          navMenu: 'Menu', navGallery: 'Galeri', navLocation: 'Lokasi', navContact: 'Hubungi',
-          btnReserve: 'Tempah',
-          heroTitle: 'Hidangan <span class="text-emerald-400">Fusi</span> Malaysia-Barat',
-          heroSub: 'Suasana mesra keluarga & sesuai untuk semua. Bahan segar, menu mesra halal dan rasa yang berani.',
-          btnViewMenu: 'Lihat Menu', btnFindUs: 'Cari Kami',
-          menuTitle: 'Sorotan Menu', menuSubtitle: 'Menu penuh tersedia di kedai. Harga tertakluk kepada perubahan.',
-          galleryTitle: 'Galeri', gallerySubtitle: 'Gantikan imej ini dengan foto anda sendiri.',
-          findUsTitle: 'Cari Kami',
-          contactTitle: 'Hubungi & Tempahan', contactSubtitle: 'Hantar WhatsApp atau e-mel. Untuk respons pantas, WhatsApp adalah terbaik.',
-          labelName: 'Nama', labelPhone: 'Telefon / WhatsApp', labelMessage: 'Mesej',
-          btnSend: 'Hantar', btnWaMY: 'WhatsApp MY', btnWaSG: 'WhatsApp SG'
-        }
-      };
+      
+const t = {
+  en: {
+    siteTitle: 'Chef Hantu',
+    navMenu: 'Menu', navGallery: 'Gallery', navLocation: 'Location', navContact: 'Contact',
+    btnReserve: 'Reserve',
+    heroTitle: 'Malaysian-Western <span class="text-emerald-400">Fusion</span> Dining',
+    heroSub: 'Cozy, family-friendly & culturally welcoming. Fresh ingredients, halal-friendly menu, and bold flavors.',
+    btnViewMenu: 'View Menu', btnFindUs: 'Find Us',
+    menuTitle: 'Menu Highlights', menuSubtitle: 'Full menu available in-store. Prices subject to change.',
+    galleryTitle: 'Gallery', gallerySubtitle: 'Swap these images with your own photos to make the page yours.',
+    findUsTitle: 'Find Us',
+    contactTitle: 'Contact & Reservations', contactSubtitle: 'Send us a WhatsApp or email. For quick replies, WhatsApp is best.',
+    labelName: 'Name', labelPhone: 'Phone / WhatsApp', labelMessage: 'Message',
+    btnSend: 'Send', btnWaMY: 'WhatsApp MY', btnWaSG: 'WhatsApp SG'
+  },
+  ms: {
+    siteTitle: 'Chef Hantu',
+    navMenu: 'Menu', navGallery: 'Galeri', navLocation: 'Lokasi', navContact: 'Hubungi',
+    btnReserve: 'Tempah',
+    heroTitle: 'Hidangan <span class="text-emerald-400">Fusi</span> Malaysia-Barat',
+    heroSub: 'Suasana mesra keluarga & sesuai untuk semua. Bahan segar, menu mesra halal dan rasa yang berani.',
+    btnViewMenu: 'Lihat Menu', btnFindUs: 'Cari Kami',
+    menuTitle: 'Sorotan Menu', menuSubtitle: 'Menu penuh tersedia di kedai. Harga tertakluk kepada perubahan.',
+    galleryTitle: 'Galeri', gallerySubtitle: 'Gantikan imej ini dengan foto anda sendiri.',
+    findUsTitle: 'Cari Kami',
+    contactTitle: 'Hubungi & Tempahan', contactSubtitle: 'Hantar WhatsApp atau e-mel. Untuk respons pantas, WhatsApp adalah terbaik.',
+    labelName: 'Nama', labelPhone: 'Telefon / WhatsApp', labelMessage: 'Mesej',
+    btnSend: 'Hantar', btnWaMY: 'WhatsApp MY', btnWaSG: 'WhatsApp SG'
+  }
+};
 
-      const ids = ['siteTitle','navMenu','navGallery','navLocation','navContact','btnReserve','heroTitle','heroSub','btnViewMenu','btnFindUs','menuTitle','menuSubtitle','galleryTitle','gallerySubtitle','findUsTitle','contactTitle','contactSubtitle','labelName','labelPhone','labelMessage','btnSend','btnWaMY','btnWaSG'];
+const langIds = [
+  'siteTitle','navMenu','navGallery','navLocation','navContact','btnReserve',
+  'heroTitle','heroSub','btnViewMenu','btnFindUs',
+  'menuTitle','menuSubtitle','galleryTitle','gallerySubtitle',
+  'findUsTitle','contactTitle','contactSubtitle',
+  'labelName','labelPhone','labelMessage','btnSend','btnWaMY','btnWaSG'
+];
 
-      function applyLang(lang){
-        const dict = t[lang];
-        ids.forEach(id=>{
-          const el = document.getElementById(id);
-          if(!el || !dict[id]) return;
-          if(id === 'heroTitle') el.innerHTML = dict[id]; else el.textContent = dict[id];
-        });
-        document.documentElement.setAttribute('lang', lang === 'ms' ? 'ms' : 'en');
-        document.getElementById('langEN').setAttribute('aria-pressed', lang==='en');
-        document.getElementById('langMS').setAttribute('aria-pressed', lang==='ms');
-        localStorage.setItem('chefHantuLang', lang);
-      }
+function initChefHantuLang() {
+  const langENBtn = document.getElementById('langEN');
+  const langMSBtn = document.getElementById('langMS');
 
-      document.getElementById('langEN').addEventListener('click', ()=>applyLang('en'));
-      document.getElementById('langMS').addEventListener('click', ()=>applyLang('ms'));
-      applyLang(localStorage.getItem('chefHantuLang') || 'en');
-    </script>
+  function applyLang(lang){
+    const dict = t[lang] || t.en;
+    langIds.forEach(id=>{
+      const el = document.getElementById(id);
+      if(!el || !dict[id]) return;
+      if(id === 'heroTitle') el.innerHTML = dict[id];
+      else el.textContent = dict[id];
+    });
+    document.documentElement.setAttribute('lang', lang === 'ms' ? 'ms' : 'en');
+    if (langENBtn) langENBtn.setAttribute('aria-pressed', lang==='en');
+    if (langMSBtn) langMSBtn.setAttribute('aria-pressed', lang==='ms');
+    localStorage.setItem('chefHantuLang', lang);
+  }
 
+  if (langENBtn) langENBtn.addEventListener('click', ()=>applyLang('en'));
+  if (langMSBtn) langMSBtn.addEventListener('click', ()=>applyLang('ms'));
+
+  applyLang(localStorage.getItem('chefHantuLang') || 'en');
+
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+}
   <!-- Simple client-side loader for partials -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      document.querySelectorAll('[data-include]').forEach(function(el) {
-        var file = el.getAttribute('data-include');
-        fetch(file)
+      const includes = Array.from(document.querySelectorAll('[data-include]'));
+      const jobs = includes.map(function(el) {
+        const file = el.getAttribute('data-include');
+        return fetch(file)
           .then(function(resp) { return resp.text(); })
           .then(function(html) { el.innerHTML = html; })
           .catch(function(err) { console.error('Include failed for', file, err); });
+      });
+
+      Promise.all(jobs).then(function () {
+        if (typeof initChefHantuLang === 'function') {
+          initChefHantuLang();
+        }
       });
     });
   </script>

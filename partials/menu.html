@@ -1,12 +1,31 @@
 <section class="mx-auto max-w-7xl px-4 pb-20">
 
+  <!-- FILTER DROPDOWN -->
+  <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-10">
+    <h1 class="text-3xl font-bold">Our Menu</h1>
+    <div class="w-full sm:w-64">
+      <label for="categoryFilter" class="block text-sm font-medium text-slate-300 mb-1">
+        Filter by category
+      </label>
+      <select id="categoryFilter" class="w-full rounded-lg bg-slate-900/70 border border-slate-700 px-3 py-2 text-sm text-slate-100 focus:outline-none focus:ring-2 focus:ring-amber-400">
+        <option value="all">All Items</option>
+        <option value="western">Western Mains</option>
+        <option value="pasta">Pasta</option>
+        <option value="asian">Asian &amp; Fusion</option>
+        <option value="kids">Kids Menu</option>
+        <option value="sides">Sides</option>
+        <option value="beverages">Beverages</option>
+      </select>
+    </div>
+  </div>
+
   <!-- WESTERN MAINS -->
   <h2 class="text-3xl font-bold mb-6">Western Mains</h2>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
     <!-- Grilled Chicken Chop -->
-    <div class="glass p-4 rounded-xl shadow-soft">
-      <img src="/images/MGrCxCh.png" alt="Grilled Chicken Chop" class="rounded-lg mb-3">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="western">
+      <img src="/images/img.png" alt="Grilled Chicken Chop" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Grilled Chicken Chop</h3>
       <p class="text-sm text-slate-300">
         Succulent grilled chicken thigh seasoned with herbs &amp; black pepper. Served with your choice of 2 sides.
@@ -14,8 +33,8 @@
     </div>
 
     <!-- Fried Chicken Chop -->
-    <div class="glass p-4 rounded-xl shadow-soft">
-      <img src="/images/MFrCxCh.png" alt="Fried Chicken Chop" class="rounded-lg mb-3">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="western">
+      <img src="/images/img.png" alt="Fried Chicken Chop" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Fried Chicken Chop</h3>
       <p class="text-sm text-slate-300">
         Crispy golden chicken cutlet. Juicy inside, crunchy outside. Served with your choice of 2 sides.
@@ -23,8 +42,8 @@
     </div>
 
     <!-- Fish & Chips -->
-    <div class="glass p-4 rounded-xl shadow-soft">
-      <img src="/images/MFiAnCp.png" alt="Fish &amp; Chips" class="rounded-lg mb-3">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="western">
+      <img src="/images/img.png" alt="Fish &amp; Chips" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Fish &amp; Chips</h3>
       <p class="text-sm text-slate-300">
         Crispy battered barramundi with tartar sauce. Served with your choice of 2 sides.
@@ -32,8 +51,8 @@
     </div>
 
     <!-- Grilled Salmon -->
-    <div class="glass p-4 rounded-xl shadow-soft">
-      <img src="/images/MGrSm.png" alt="Grilled Salmon" class="rounded-lg mb-3">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="western">
+      <img src="/images/img.png" alt="Grilled Salmon" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Grilled Salmon</h3>
       <p class="text-sm text-slate-300">
         Premium salmon fillet grilled with lemon butter glaze. Served with your choice of 2 sides.
@@ -41,8 +60,8 @@
     </div>
 
     <!-- Grilled Barramundi -->
-    <div class="glass p-4 rounded-xl shadow-soft">
-      <img src="/images/MGrBm.png" alt="Grilled Barramundi" class="rounded-lg mb-3">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="western">
+      <img src="/images/img.png" alt="Grilled Barramundi" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Grilled Barramundi</h3>
       <p class="text-sm text-slate-300">
         Barramundi fillet grilled with herb butter. Served with your choice of 2 sides.
@@ -50,8 +69,8 @@
     </div>
 
     <!-- Rack of Lamb -->
-    <div class="glass p-4 rounded-xl shadow-soft">
-      <img src="/images/MRkLb.png" alt="Rack of Lamb" class="rounded-lg mb-3">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="western">
+      <img src="/images/img.png" alt="Rack of Lamb" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Rack of Lamb</h3>
       <p class="text-sm text-slate-300">
         Tender, flavourful lamb grilled with herbs. Served with your choice of 2 sides.
@@ -59,8 +78,8 @@
     </div>
 
     <!-- Rib Eye Steak -->
-    <div class="glass p-4 rounded-xl shadow-soft">
-      <img src="/images/MRbEySt.png" alt="Rib Eye Steak" class="rounded-lg mb-3">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="western">
+      <img src="/images/img.png" alt="Rib Eye Steak" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Rib Eye Steak</h3>
       <p class="text-sm text-slate-300">
         Juicy ribeye steak grilled to perfection. Served with your choice of 2 sides.
@@ -68,8 +87,8 @@
     </div>
 
     <!-- Burger -->
-    <div class="glass p-4 rounded-xl shadow-soft">
-      <img src="/images/MBurg.png" alt="Burger" class="rounded-lg mb-3">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="western">
+      <img src="/images/img.png" alt="Burger" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Burger</h3>
       <p class="text-sm text-slate-300">
         Homemade chicken or beef patty with lettuce, tomato, and sauce in a toasted bun. Served with 2 sides.
@@ -77,8 +96,8 @@
     </div>
 
     <!-- Chicken Cordon Bleu -->
-    <div class="glass p-4 rounded-xl shadow-soft">
-      <img src="/images/SCdBl.png" alt="Chicken Cordon Bleu" class="rounded-lg mb-3">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="western">
+      <img src="/images/img.png" alt="Chicken Cordon Bleu" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Chicken Cordon Bleu</h3>
       <p class="text-sm text-slate-300">
         Chef’s special stuffed chicken with melty cheese and chicken ham, fried to a golden crisp. Served with 2 sides.
@@ -93,8 +112,8 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
     <!-- Carbonara Pasta -->
-    <div class="glass p-4 rounded-xl shadow-soft">
-      <img src="/images/PCbPt.png" alt="Carbonara Pasta" class="rounded-lg mb-3">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="pasta">
+      <img src="/images/img.png" alt="Carbonara Pasta" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Carbonara Pasta</h3>
       <p class="text-sm text-slate-300">
         Creamy halal carbonara with parmesan, chicken slices, garlic, and egg. Rich, smooth, and comforting.
@@ -102,8 +121,8 @@
     </div>
 
     <!-- Aglio Olio Pasta -->
-    <div class="glass p-4 rounded-xl shadow-soft">
-      <img src="/images/PAgOlPt.png" alt="Aglio Olio Pasta" class="rounded-lg mb-3">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="pasta">
+      <img src="/images/img.png" alt="Aglio Olio Pasta" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Aglio Olio Pasta</h3>
       <p class="text-sm text-slate-300">
         Classic garlic and chili pasta tossed with chicken. Light, aromatic, and full of flavour.
@@ -111,8 +130,8 @@
     </div>
 
     <!-- Bolognese Pasta -->
-    <div class="glass p-4 rounded-xl shadow-soft">
-      <img src="/images/PBgPt.png" alt="Bolognese Pasta" class="rounded-lg mb-3">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="pasta">
+      <img src="/images/img.png" alt="Bolognese Pasta" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Bolognese Pasta</h3>
       <p class="text-sm text-slate-300">
         Slow-cooked meat sauce served over spaghetti, topped with parmesan cheese.
@@ -120,7 +139,7 @@
     </div>
 
     <!-- Lemak Cili Padi Pasta -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="pasta">
       <img src="/images/img.png" alt="Lemak Cili Padi Pasta" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Lemak Cili Padi Pasta</h3>
       <p class="text-sm text-slate-300">
@@ -129,8 +148,8 @@
     </div>
 
     <!-- Squid Ink Pasta (Signature) -->
-    <div class="glass p-4 rounded-xl shadow-soft">
-      <img src="/images/hero-squid-ink.png" alt="Squid Ink Pasta" class="rounded-lg mb-3">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="pasta">
+      <img src="/images/img.png" alt="Squid Ink Pasta" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Squid Ink Pasta (Signature)</h3>
       <p class="text-sm text-slate-300">
         Jet-black squid ink pasta with whole grilled squid, cherry tomatoes and parsley – Chef Hantu’s signature.
@@ -145,8 +164,8 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
     <!-- Mee Jelapang Padi -->
-    <div class="glass p-4 rounded-xl shadow-soft">
-      <img src="/images/FMiJpPd.png" alt="Mee Jelapang Padi" class="rounded-lg mb-3">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="asian">
+      <img src="/images/img.png" alt="Mee Jelapang Padi" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Mee Jelapang Padi</h3>
       <p class="text-sm text-slate-300">
         Tiger prawns, egg, kucai, taugeh, onions, chili padi and garlic tossed in smoky wok hei gravy.
@@ -154,8 +173,8 @@
     </div>
 
     <!-- Char Kway Teow -->
-    <div class="glass p-4 rounded-xl shadow-soft">
-      <img src="/images/FChKwTw.png" alt="Char Kway Teow" class="rounded-lg mb-3">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="asian">
+      <img src="/images/img.png" alt="Char Kway Teow" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Char Kway Teow</h3>
       <p class="text-sm text-slate-300">
         Flat rice noodles wok-tossed with prawns, egg, taugeh and Chef’s special sauce.
@@ -163,7 +182,7 @@
     </div>
 
     <!-- Fried Noodles -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="asian">
       <img src="/images/img.png" alt="Fried Noodles" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Fried Noodles</h3>
       <p class="text-sm text-slate-300">
@@ -172,7 +191,7 @@
     </div>
 
     <!-- Egg Fried Rice -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="asian">
       <img src="/images/img.png" alt="Egg Fried Rice" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Egg Fried Rice</h3>
       <p class="text-sm text-slate-300">
@@ -181,7 +200,7 @@
     </div>
 
     <!-- Garlic Butter Fried Rice -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="asian">
       <img src="/images/img.png" alt="Garlic Butter Fried Rice" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Garlic Butter Fried Rice</h3>
       <p class="text-sm text-slate-300">
@@ -197,7 +216,7 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
     <!-- Chic & Fries -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="kids">
       <img src="/images/img.png" alt="Chic &amp; Fries" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Chic &amp; Fries</h3>
       <p class="text-sm text-slate-300">
@@ -206,7 +225,7 @@
     </div>
 
     <!-- Bolognese Kids -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="kids">
       <img src="/images/img.png" alt="Bolognese Kids" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Bolognese Kids</h3>
       <p class="text-sm text-slate-300">
@@ -215,7 +234,7 @@
     </div>
 
     <!-- Kids Burger -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="kids">
       <img src="/images/img.png" alt="Kids Burger" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Kids Burger</h3>
       <p class="text-sm text-slate-300">
@@ -224,7 +243,7 @@
     </div>
 
     <!-- Kids Aglio Olio -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="kids">
       <img src="/images/img.png" alt="Kids Aglio Olio" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Kids Aglio Olio</h3>
       <p class="text-sm text-slate-300">
@@ -233,7 +252,7 @@
     </div>
 
     <!-- Kids Fish & Chips -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="kids">
       <img src="/images/img.png" alt="Kids Fish &amp; Chips" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Kids Fish &amp; Chips</h3>
       <p class="text-sm text-slate-300">
@@ -242,7 +261,7 @@
     </div>
 
     <!-- Kids Porridge -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="kids">
       <img src="/images/img.png" alt="Kids Porridge" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Kids Porridge</h3>
       <p class="text-sm text-slate-300">
@@ -258,7 +277,7 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
     <!-- Cheese Balls -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="sides">
       <img src="/images/img.png" alt="Cheese Balls" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Cheese Balls</h3>
       <p class="text-sm text-slate-300">
@@ -267,7 +286,7 @@
     </div>
 
     <!-- Wings -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="sides">
       <img src="/images/img.png" alt="Wings" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Wings</h3>
       <p class="text-sm text-slate-300">
@@ -276,7 +295,7 @@
     </div>
 
     <!-- Fries -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="sides">
       <img src="/images/img.png" alt="Fries" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Fries</h3>
       <p class="text-sm text-slate-300">
@@ -285,7 +304,7 @@
     </div>
 
     <!-- Coleslaw -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="sides">
       <img src="/images/img.png" alt="Coleslaw" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Coleslaw</h3>
       <p class="text-sm text-slate-300">
@@ -294,7 +313,7 @@
     </div>
 
     <!-- Wedges -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="sides">
       <img src="/images/img.png" alt="Wedges" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Wedges</h3>
       <p class="text-sm text-slate-300">
@@ -303,7 +322,7 @@
     </div>
 
     <!-- Mushroom Soup -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="sides">
       <img src="/images/img.png" alt="Mushroom Soup" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Mushroom Soup</h3>
       <p class="text-sm text-slate-300">
@@ -312,7 +331,7 @@
     </div>
 
     <!-- Garlic Bread -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="sides">
       <img src="/images/img.png" alt="Garlic Bread" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Garlic Bread</h3>
       <p class="text-sm text-slate-300">
@@ -331,7 +350,7 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
 
     <!-- Coffee -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="beverages">
       <img src="/images/img.png" alt="Coffee" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Coffee</h3>
       <p class="text-sm text-slate-300">
@@ -340,7 +359,7 @@
     </div>
 
     <!-- Tea -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="beverages">
       <img src="/images/img.png" alt="Tea" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Tea</h3>
       <p class="text-sm text-slate-300">
@@ -349,7 +368,7 @@
     </div>
 
     <!-- Milo -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="beverages">
       <img src="/images/img.png" alt="Milo" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Milo</h3>
       <p class="text-sm text-slate-300">
@@ -358,7 +377,7 @@
     </div>
 
     <!-- Nescafe -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="beverages">
       <img src="/images/img.png" alt="Nescafe" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Nescafe</h3>
       <p class="text-sm text-slate-300">
@@ -367,7 +386,7 @@
     </div>
 
     <!-- Neslo -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="beverages">
       <img src="/images/img.png" alt="Neslo" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Neslo</h3>
       <p class="text-sm text-slate-300">
@@ -376,7 +395,7 @@
     </div>
 
     <!-- Yuan Yang -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="beverages">
       <img src="/images/img.png" alt="Yuan Yang" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Yuan Yang</h3>
       <p class="text-sm text-slate-300">
@@ -391,7 +410,7 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
 
     <!-- Bandung -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="beverages">
       <img src="/images/img.png" alt="Bandung" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Bandung</h3>
       <p class="text-sm text-slate-300">
@@ -400,7 +419,7 @@
     </div>
 
     <!-- Syrup -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="beverages">
       <img src="/images/img.png" alt="Syrup" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Syrup</h3>
       <p class="text-sm text-slate-300">
@@ -415,7 +434,7 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
 
     <!-- Fruit Juice -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="beverages">
       <img src="/images/img.png" alt="Fruit Juice" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Fruit Juice</h3>
       <p class="text-sm text-slate-300">
@@ -424,7 +443,7 @@
     </div>
 
     <!-- Barley -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="beverages">
       <img src="/images/img.png" alt="Barley" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Barley</h3>
       <p class="text-sm text-slate-300">
@@ -433,7 +452,7 @@
     </div>
 
     <!-- Soda -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="beverages">
       <img src="/images/img.png" alt="Soda" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Soda</h3>
       <p class="text-sm text-slate-300">
@@ -442,7 +461,7 @@
     </div>
 
     <!-- Water -->
-    <div class="glass p-4 rounded-xl shadow-soft">
+    <div class="glass p-4 rounded-xl shadow-soft cursor-pointer hover:-translate-y-1 hover:shadow-lg transition" data-category="beverages">
       <img src="/images/img.png" alt="Water" class="rounded-lg mb-3">
       <h3 class="text-xl font-bold mb-1">Water</h3>
       <p class="text-sm text-slate-300">
@@ -452,4 +471,78 @@
 
   </div>
 
+  <!-- MODAL -->
+  <div id="menuModal" class="fixed inset-0 bg-black/70 flex items-center justify-center z-50 hidden">
+    <div class="bg-slate-900 rounded-2xl max-w-lg w-full mx-4 p-4 sm:p-6 relative">
+      <button id="menuModalClose" class="absolute top-3 right-3 text-slate-400 hover:text-white text-xl" aria-label="Close">
+        &times;
+      </button>
+      <img id="menuModalImg" src="/images/img.png" alt="" class="rounded-lg mb-4 max-h-64 w-full object-cover">
+      <h3 id="menuModalTitle" class="text-2xl font-bold mb-2">Title</h3>
+      <p id="menuModalDesc" class="text-sm text-slate-200 leading-relaxed">
+        Description goes here.
+      </p>
+    </div>
+  </div>
+
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const filter = document.getElementById('categoryFilter');
+    const cards = document.querySelectorAll('[data-category]');
+    const modal = document.getElementById('menuModal');
+    const modalTitle = document.getElementById('menuModalTitle');
+    const modalDesc = document.getElementById('menuModalDesc');
+    const modalImg = document.getElementById('menuModalImg');
+    const modalClose = document.getElementById('menuModalClose');
+
+    // Filter logic
+    function applyFilter() {
+      const value = filter.value;
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        if (value === 'all' || value === cat) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    filter.addEventListener('change', applyFilter);
+    applyFilter();
+
+    // Modal logic
+    function openModal(card) {
+      const titleEl = card.querySelector('h3');
+      const descEl = card.querySelector('p');
+      const imgEl = card.querySelector('img');
+
+      modalTitle.textContent = titleEl ? titleEl.textContent : '';
+      modalDesc.textContent = descEl ? descEl.textContent : '';
+      if (imgEl) {
+        modalImg.src = imgEl.src;
+        modalImg.alt = imgEl.alt || '';
+      }
+
+      modal.classList.remove('hidden');
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+    }
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => openModal(card));
+    });
+
+    modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  });
+</script>
